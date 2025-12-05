@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Resume Matcher</title></head>
+<body>
+<h2>AI Resume & JD Matcher</h2>
+<form method="POST">
+<textarea name="resume" rows="10" cols="80" placeholder="Paste Resume..."></textarea><br><br>
+<textarea name="jd" rows="10" cols="80" placeholder="Paste Job Description..."></textarea><br><br>
+<button type="submit">Generate Match Report</button>
+</form>
+
+{% if report %}
+<h3>Match Report</h3>
+<pre>{{ report }}</pre>
+{% endif %}
+</body>
+</html>
